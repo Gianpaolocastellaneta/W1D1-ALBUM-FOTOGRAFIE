@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Album Foto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .form-select-sm {
+      max-width: 150px;
+    }
+
+    .media {
+      width: 100%;
+      height: 200px; /* Altezza fissa */
+      object-fit: cover; /* Adatta il contenuto mantenendo le proporzioni */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+
+  <header class="bg-dark text-white text-center py-3">
+    <h1>Album Foto</h1>
+  </header>
+
+  <!-- FINE HEADER -->
+
+  <!-- MAIN -->
+  <main>
+
+    <div class="container my-4">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="input-group mb-3">
+            <input type="text" id="search-input" class="form-control" placeholder="Cerca immagine...">
+            <select name="tipologia" id="tipologia" class="form-select form-select-sm mx-2">
+              <option value="foto">Foto</option>
+              <option value="video">Video</option>
+            </select>
+            <button id="search-btn" class="btn btn-dark">Cerca</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container my-5">
+      <div class="d-flex justify-content-center mb-4">
+        <button id="btn-luna" type="button" class="btn btn-secondary me-2">Moon</button>
+        <button id="btn-programmazione" type="button" class="btn btn-secondary">Programming</button>
+      </div>
+      <hr style="height: 2px; background-color: rgb(126, 126, 126); opacity:inherit; margin-bottom: 50px;">
+
+
+      <div id="gallery" class="row"></div>
+    </div>
+  </main>
+
+  <!-- FINE MAIN -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
